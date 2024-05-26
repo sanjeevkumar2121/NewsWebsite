@@ -1,14 +1,16 @@
-const express= require("express")
-const cors= require("cors")
-const newsserver= express()
-newsserver.use(cors())
-const port = 8080||3001
-newsserver.get("/",(req,res) => {res.send({messege:"This is msg from server and it is running fine"})})
+const express = require("express");
+const cors = require("cors");
 
+const app = express();
+app.use(cors());
+const port = 3001 || 8080;
 
+app.get("/", (req, res) => {
+  res.send({
+    message: "Express API backend!",
+  });
+});
 
-
-
-
-
-newsserver.listen(port,()=>{console.log(`server listen on port ${port}`)})
+app.listen(port, () => {
+  console.log(`Server is listening on port ${port}`);
+});
