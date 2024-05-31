@@ -1,17 +1,16 @@
-
-import Navbar from './Components/navbar';
-import logo from "./logo.svg";
+import Navbar from "./Components/navbar";
 import "./App.css";
 import Footer from "./Components/footer";
 import { HomePage, Body } from "./Components/homepage";
+import Sum from "./Components/Sum";
 function App() {
   return (
     <div className="App">
-     < Navbar / >
-
+      {/* <Navbar />
       <HomePage />
       <Body />
-      <Footer />
+      <Footer /> */}
+      <Sum />
     </div>
   );
 }
